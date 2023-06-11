@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap");
+
+@font-face {
+  font-family: "San Francisco Pro Display Regular";
+  src: url("../tools/fonts/SFProDisplay-Regular.woff2") format("woff2"),
+    url("../tools/fonts/SFProDisplay-Regular.woff") format("woff"),
+    url("../tools/fonts/SFProDisplay-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "San Francisco Pro Display Medium";
+  src: url("../tools/fonts/SFProDisplay-Medium.woff2") format("woff2"),
+    url("../tools/fonts/SFProDisplay-Medium.woff") format("woff"),
+    url("../tools/fonts/SFProDisplay-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "San Francisco Pro Display Semibold";
+  src: url("../tools/fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+    url("../tools/fonts/SFProDisplay-Semibold.woff") format("woff"),
+    url("../tools/fonts/SFProDisplay-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+*,
+*::before,
+*::after {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins";
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+aside,
+nav,
+footer,
+header,
+section,
+main {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+p + p {
+  margin-top: 1em;
+}
+ul {
+  list-style: none;
+}
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+  height: auto;
+}
+input,
+textarea,
+button,
+select {
+  font-family: inherit;
+  font-style: inherit;
+}
+input::-ms-clear {
+  display: none;
+}
+button,
+input[type="submit"] {
+  display: inline-block;
+  box-shadow: none;
+  border-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+input:focus,
+input:active,
+button:focus,
+button:active {
+  outline: none;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+label {
+  cursor: pointer;
+}
+legend {
+  display: block;
+}

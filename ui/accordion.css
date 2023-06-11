@@ -1,0 +1,134 @@
+.events {
+  padding: 110px 108px 100px 108px;
+  font-family: "San Francisco Pro Display Regular";
+  font-style: normal;
+}
+.events__title {
+  padding-bottom: 40px;
+  font-family: "Poppins";
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 104%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #162c4e;
+  opacity: 0.39;
+  animation: 1s ease-out;
+  -webkit-animation: 1s ease-out;
+}
+.events__items {
+  display: flex;
+  font-family: "San Francisco Pro Display Regular";
+  gap: 4px;
+  height: 782px;
+  margin: 0 auto;
+}
+.events__item {
+  display: flex;
+  width: 85px;
+  gap: 1px;
+  background: url(../assets/accordion/party-on-the-beach.png) no-repeat;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+.events__item-info {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 40px;
+  padding: 21px 18px;
+  width: 85px;
+  border-bottom: 2px solid #df2224;
+  color: #fff;
+  height: 100%;
+  background: no-repeat,
+    linear-gradient(180deg, rgba(22, 44, 78, 0) 0%, #162c4e 100%),
+    rgba(18, 18, 18, 0.5);
+  background-blend-mode: darken;
+  cursor: pointer;
+}
+.events__item-info.open {
+  background: #162c4e;
+}
+.events__item-number {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  text-align: right;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+.events__item-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  transform: rotate(270deg);
+  white-space: nowrap;
+}
+.events__content {
+  width: 100%;
+  overflow: hidden;
+  background: url(../assets/accordion/accordion-bg.png) no-repeat left top/cover;
+  border-bottom: 2px solid #df2224;
+}
+.events__content-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 50px 42px;
+  justify-content: flex-end;
+  height: 100%;
+  width: 364px;
+  background: rgba(18, 18, 18, 0.8);
+  backdrop-filter: blur(20px);
+}
+.events__content-number {
+  position: absolute;
+  top: 0;
+  left: -142px;
+  font-size: 380px;
+  font-weight: 600;
+  font-size: 380px;
+  line-height: 100%;
+  text-align: right;
+  letter-spacing: -0.03em;
+  color: rgba(255, 255, 255, 0.04);
+}
+.events__content-title {
+  padding-bottom: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  color: #ffffff;
+}
+.events__content-date {
+  font-size: 18px;
+  line-height: 150%;
+  padding-bottom: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.events__content-btn {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
+  max-width: 264px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.8);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-left: 7px solid #fff;
+  overflow: hidden;
+  transition: all 0.4s linear;
+}
+
+.events__content-btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: black;
+}
+
+.events__item.open {
+  flex-grow: 1;
+}

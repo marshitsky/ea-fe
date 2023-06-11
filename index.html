@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg" />
+    <link rel="stylesheet" href="./ui/reset.css" />
+    <link rel="stylesheet" href="./ui/wrapper.css" />
+    <link rel="stylesheet" href="./ui/animation.css" />
+    <link rel="stylesheet" href="./ui/header.css" />
+    <link rel="stylesheet" href="./ui/home.css" />
+    <link rel="stylesheet" href="./ui/footer.css" />
+    <link rel="stylesheet" href="./ui/media.css" />
+    <link rel="stylesheet" href="./ui/accordion.css">
+    <link rel="stylesheet" href="./ui/modal.css">
+    <link rel="stylesheet" href="./ui/media.css">
+    <script src="./scripts/main.js" defer></script>
+    <script src="./scripts/timer.js" defer></script>
+    <script src="./scripts/accordion.js" defer></script>
+    <title>LEAD</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <a href="./index.html">
+          <img
+            class="header__logo"
+            src="./assets/content/header-logo.svg"
+            alt="header-logo"
+          />
+        </a>
+      </header>
+
+      <main class="home">
+        <h1 class="home__title">Under Construction</h1>
+        <div class="home__description">
+          <p class="home__description-content">
+            We're making lots of improvements and will be back soon
+          </p>
+        </div>
+
+        <ul class="home__timer">
+          <li class="home__timer-item" id="days"></li>
+          <li class="home__timer-item" id="hours"></li>
+          <li class="home__timer-item" id="minutes"></li>
+          <li class="home__timer-item" id="seconds"></li>
+          <div class="preloader" id="preloader">
+            <div class="lds-ripple">
+              <div></div>
+              <div></div>
+            </div>
+          </div>
+        </ul>
+
+        <section class="event">
+          <p class="event__text">Check our event page when you wait:</p>
+          <a
+            href="https://drive.google.com/file/d/1-g2em7HkT2eakoD4gufdNLTv25Ge1Knb/view?usp=share_link"
+            class="event__button"
+            target="_blank"
+            ><span>Go to the event</span
+            ><img
+              src="./assets/content/btn-right-arrow.svg"
+              class="event__arrow"
+              alt="button-arrow"
+          /></a>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <form method="post" class="footer__form">
+          <input
+            class="footer__input"
+            type="email"
+            name="email"
+            placeholder="Enter your Email and get notified"
+          />
+          <button type="submit" class="footer__form-button">
+            <img
+              src="./assets/content/btn-submit-red.svg"
+              class="footer__form-arrow"
+              alt="submit-button"
+            />
+          </button>
+        </form>
+
+        <a class="footer__btn" href="#events">
+          <span class="footer__btn-text">Other Events</span>
+          <img
+            src="./assets/content/btn-arrow-down.svg"
+            class="footer__btn-img"
+            alt="arrow-down"
+          />
+        </a>
+      </footer>
+    </div>
+   
+    <div id="events" class="events">
+      <h2 class="events__title">All events</h2>
+      <ul class="events__items">
+        <li class="events__item open"">
+          <div class="events__item-info">
+            <p class="events__item-number">01</p>
+            <p class="events__item-title">Hawaiian party</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info">
+              <p class="events__content-number">01</p>
+              <p class="events__content-title">Hawaiian party</p>
+              <p class="events__content-date">13.02.2023</p>
+              <a
+                href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="events__item">
+          <div class="events__item-info">
+            <p class="events__item-number">02</p>
+            <p class="events__item-title">Мafia party</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info">
+              <p class="events__content-number">02</p>
+              <p class="events__content-title">Мafia party</p>
+              <p class="events__content-date">13.02.2023</p>
+              <a href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="events__item">
+          <div class="events__item-info">
+            <p class="events__item-number">03</p>
+            <p class="events__item-title">Party</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info">
+              <p class="events__content-number">03</p>
+              <p class="events__content-title">Party</p>
+              <p class="events__content-date">13.02.2023</p>
+              <a href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="events__item">
+          <div class="events__item-info">
+            <p class="events__item-number">04</p>
+            <p class="events__item-title">Party on the beach</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info" >
+              <p class="events__content-number">04</p>
+              <p class="events__content-title">Party on the beach</p>
+              <p class="events__content-date">13.02.2023</p>
+              <a href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="events__item">
+          <div class="events__item-info">
+            <p class="events__item-number">05</p>
+            <p class="events__item-title">Home Security</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info">
+              <p class="events__content-number">05</p>
+              <p class="events__content-title">Home Security</p>
+              <p class="events__content-date">13.02.2023</p>
+              <a href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="events__item">
+          <div class="events__item-info">
+            <p class="events__item-number">06</p>
+            <p class="events__item-title">Network Design & Implementation</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info">
+              <p class="events__content-number">06</p>
+              <p class="events__content-title">
+                Network Design & Implementation
+              </p>
+              <p class="events__content-date">13.02.2023</p>
+              <a href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="events__item">
+          <div class="events__item-info">
+            <p class="events__item-number">07</p>
+            <p class="events__item-title">System Design & Engineering</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info">
+              <p class="events__content-number">07</p>
+              <p class="events__content-title">System Design & Engineering</p>
+              <p class="events__content-date">13.02.2023</p>
+              <a href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+        <li class="events__item">
+          <div class="events__item-info">
+            <p class="events__item-number">08</p>
+            <p class="events__item-title">Client Care Plans</p>
+          </div>
+          <div class="events__content">
+            <div class="events__content-info">
+              <p class="events__content-number">08</p>
+              <p class="events__content-title">Client Care Plans</p>
+              <p class="events__content-date">13.02.2023</p>
+              <a href="#"
+                class="events__content-btn"
+                >More information</a
+              >
+            </div>
+          </div>
+        </li>
+      </ul>
+    </в>
+        </div>
+      </li>
+    </div>
+  </body>
+</html>
